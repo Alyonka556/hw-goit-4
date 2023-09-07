@@ -140,3 +140,85 @@ letter-spacing: 0.02em;
     line-height: 1.5; 
     letter-spacing: 0.02em;
     }
+
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+        }
+
+.h1, .h2, .h3, .h4, .p {
+margin-top: 0;
+margin-bottom: 0;
+}
+    
+.ul,.ol {
+margin-top: 0;
+margin-bottom: 0;
+padding-left: 0;
+}
+
+.page-header{
+border-bottom: 1px solid #e7e9fc
+}
+
+.container{
+display: flex;
+width: 1158px;
+margin: 0 auto;
+padding: 0 15px 0 15px; 
+}
+
+.page-nav{
+display: flex;
+align-items: center;
+padding-left: 156px;
+}
+
+.menu{
+    display: flex;
+    gap: 40px;
+    padding-left: 76px;
+}
+
+.list-adress{
+    display: flex;
+    gap: 40px;
+}
+
+.section-modal{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.btn-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
+.list-information{
+    width: calc((100%-48px)/3);
+    
+}
+
+.div-name-category{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+  }
+
+    
