@@ -11,6 +11,10 @@
     
     .list{
         list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;
     }
     .link{
         text-decoration: none;
@@ -24,6 +28,7 @@
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        margin-right: 76px
     }
     
     .logo-nav{
@@ -43,6 +48,7 @@
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
     }
     
     .menu-link:hover{
@@ -88,12 +94,17 @@
         line-height: 1.5; 
         letter-spacing: 0.04em;
         background-color:#F4F4FD;
+        padding: 12px 24px;
+        border-radius: 4px;
+
     }
 
     .btn-modal:hover,
     .btn-modal:focus {
         color:#FFFFFF;
         background-color:#404BBF;
+        border: 1px solid #e7e9fc;
+
     }
 
     .btn-modal{
@@ -107,6 +118,7 @@ font-size: 20px;
 font-weight: 500;
 line-height: 1.2; 
 letter-spacing: 0.02em;
+margin-bottom: 8px;
     }
 
     .text{
@@ -173,7 +185,10 @@ border-bottom: 1px solid #e7e9fc
 display: flex;
 width: 1158px;
 margin: 0 auto;
-padding: 0 15px 0 15px; 
+padding: 0 15px 0 15px;
+padding: 32px 16px;
+border: 1px solid #e7e9fc;
+ 
 }
 
 .page-nav{
@@ -220,5 +235,7 @@ padding-left: 156px;
     display: block;
     max-width: 100%;
   }
+
+  
 
     
