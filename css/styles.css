@@ -184,7 +184,7 @@ margin-bottom: 8px;
 
 .work-list-team{
     background-color: #FFFFFF;
-    width: calc((100% - 72px) / 4);
+    width: 7px;
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -251,11 +251,14 @@ padding-left: 0;
 border-bottom: 1px solid #e7e9fc;
 }
 
+.div{
+    display: flex;   
+}
+
 .container{
-display: flex;
 width: 1158px;
 margin: 0 auto;
-padding:0 15px 0 15px;
+padding: 0 15px;
    }
 
 .page-nav{
@@ -289,13 +292,14 @@ padding:0 15px 0 15px;
 }
 
 .list-inform{
-    width: calc((100% - 72px) / 4);
+    width:7px;
 
 }
 
 .work-inform{
     
     padding-bottom: 120px;
+    width: calc((100% - 72px) / 4);
 }
 
 .img-work{
@@ -325,7 +329,7 @@ padding:0 15px 0 15px;
     max-width: 100%;
   }
 
-  .logo{
+  .link .logo{
     display: inline-block;
     margin-bottom: 16px;
     margin-right: 76px;
@@ -333,6 +337,10 @@ padding:0 15px 0 15px;
 
   .name-profesional-div{
     padding: 32px 0;
+    width: calc((100% - 72px) / 4);
   }
 
+  .img{
+    display: block;
+  }
   
