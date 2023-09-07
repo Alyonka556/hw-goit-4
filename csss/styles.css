@@ -133,6 +133,7 @@ letter-spacing: 0.02em;
 
     .footer{
         background-color:#2e2f42;
+        padding: 100px 0;
     }
     
     .logo-nav-footer{
@@ -249,4 +250,8 @@ padding-left: 156px;
   border-top: none;
   }
   
+.footer-logo{
+    display: inline-block;
+    margin-bottom: 16px;
+}
     

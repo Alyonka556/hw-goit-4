@@ -346,8 +346,8 @@ width: calc((100% - 72px) / 4);
     display: block;
   }
 
-  .a{
+  .footer-logo{
     display: inline-block;
     margin-bottom: 16px;
-  }
+}
   
