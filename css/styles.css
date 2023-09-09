@@ -263,10 +263,11 @@ padding-left: 0;
 
 .page-header{
 border-bottom: 1px solid #e7e9fc;
+display: flex;
 }
 
 .div{
-    display: flex;   
+display: flex;   
 }
 
 .container{
@@ -274,8 +275,6 @@ width: 1158px;
 margin: 0 auto;
 padding: 0 15px;
 }
-
-
 
 .page-nav{
  display: flex;
