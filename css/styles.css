@@ -193,6 +193,7 @@ margin-bottom: 8px;
 
 .working-team{
     display: block;
+    max-width: 100%;
 }
 
 .work-list-team{
@@ -319,11 +320,13 @@ width: calc((100% - 72px) / 4);
 
 .img-work{
     display: flex;
+    max-width: 100%;
     gap: 24px;
 }
 
 .img-inform{
     display: block;
+    max-width: 100%;
 }
 
 .img-list{
