@@ -196,7 +196,12 @@ padding-left: 0;
 }
 
 .page-header{
-border-bottom: 1px solid #e7e9fc
+border-bottom: 1px solid #e7e9fc;
+display: flex;
+}
+
+.div{
+    display: flex;
 }
 
 .container{
