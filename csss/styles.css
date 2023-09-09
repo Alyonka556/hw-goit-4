@@ -9,7 +9,7 @@
     --brand-color:#434455;
 }
     
-    .list{
+.list{
         list-style: none;
         display: flex;
         flex-wrap: wrap;
@@ -18,12 +18,13 @@
         padding-left: 0;
         margin: 0 auto;
         padding-right: 32px;
-    }
-    .link{
+} 
+
+.link{
         text-decoration: none;
-    }
+}
     
-    .logo{
+.logo{
         color: #4D5AE5;
         font-family: 'Raleway', sans-serif;
         font-size: 18px;
@@ -32,9 +33,9 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin-right: 76px
-    }
+ }
     
-    .logo-nav{
+.logo-nav{
         color: #2E2F42;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -42,9 +43,9 @@
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    }
+}
     
-    .menu-link{
+.menu-link{
         color: #2E2F42;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -52,17 +53,17 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
-    }
+}
     
-    .menu-link:hover{
+.menu-link:hover{
         color: #404bbf;  
-    }
+}
     
-    .menu-link:focus{
+.menu-link:focus{
         color: #404bbf;
-    }
+ }
     
-    .adress{
+.adress{
         color:#434455;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -70,25 +71,25 @@
     line-height: 1.5; 
     letter-spacing: 0.02em;
     font-style: normal;
-    }
+}
     
-    .adress-menu{
+.adress-menu{
         color:#434455;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5; 
     letter-spacing: 0.02em;
-    }
+}
     
-    .adress-menu:focus,
-    .adress-menu:hover {
+.adress-menu:focus,
+.adress-menu:hover {
         color:#404bbf;
-    }
+}
     
     
     
-    .btn-modal{
+.btn-modal{
         color:#4d5ae5;
         text-align: center;
         font-family: 'Roboto', sans-serif;
@@ -100,22 +101,29 @@
         padding: 12px 24px;
         border-radius: 4px;
         border: 1px solid #e7e9fc
+}
 
-    }
-
-    .btn-modal:hover,
-    .btn-modal:focus {
+.btn-modal:hover,
+.btn-modal:focus {
         color:#FFFFFF;
         background-color:#404BBF;
         border: 1px solid transparent;
+}
 
-    }
-
-    .btn-modal{
+.btn-modal{
     cursor: pointer;
-    }
+}
 
-    .title-name{
+.list-work{
+    display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;
+        padding-left: 0;
+        margin: 0 auto;
+}
+
+.title-name{
         color:#2E2F42;
 font-family: 'Roboto', sans-serif;
 font-size: 20px;
@@ -124,25 +132,27 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 margin-bottom: 8px;
 margin-top: 0;
-    }
+padding-left: 0;
+}
 
-    .text{
+.text{
         color:#434455;
 font-family: 'Roboto', sans-serif;
 font-size: 16px;
 font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.02em;
-margin: 0;
-    }
+padding-left: 0;
+margin: 0 auto;
+}
 
-    .footer{
+.footer{
         background-color:#2e2f42;
         padding: 100px 0;
         padding-left: 156px;
-    }
+}
     
-    .logo-nav-footer{
+.logo-nav-footer{
         color:#F4F4FD;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -150,18 +160,18 @@ margin: 0;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    }
+}
     
-    .business-item{
+.business-item{
         color:#F4F4FD;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5; 
     letter-spacing: 0.02em;
-    }
+}
 
-    .visually-hidden {
+.visually-hidden {
         position: absolute;
         width: 1px;
         height: 1px;
@@ -172,7 +182,7 @@ margin: 0;
         clip-path: inset(100%);
         clip: rect(0 0 0 0);
         overflow: hidden;
-        }
+}
 
 .h1, .h2, .h3, .h4, .p {
 margin-top: 0;
@@ -197,8 +207,6 @@ border-bottom: 1px solid #e7e9fc
 width: 1158px;
 margin: 0 auto;
 padding: 0 15px;
-
- 
 }
 
 .page-nav{
@@ -240,7 +248,6 @@ padding-left: 156px;
 
 .list-information{
     width: calc((100%-48px)/3);
-    display: flex;
     margin: 0 auto;
     padding: 0;
 }
@@ -254,18 +261,23 @@ padding-left: 156px;
 .img {
     display: block;
     max-width: 100%;
-  }
+}
 
-  .img-progect{
+.img-progect{
     display: block;
-  }
+    padding-left: 0;
+    padding: 0 auto;
+     margin: 0 auto;
+}
 
  
-  .h-p{
+.h-p{
     padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  }
+  padding-left: 0;
+        margin: 0 auto;
+}
   
 .footer-logo{
     display: inline-block;
