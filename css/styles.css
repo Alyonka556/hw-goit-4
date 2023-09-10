@@ -343,7 +343,7 @@ width: calc((100% - 72px) / 4);
 .working-team{
     display: block;
 }
-.img{
+img{
     display: block;
 }
 
