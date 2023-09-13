@@ -66,6 +66,7 @@ font-weight: 400;
 line-height: 1.5; 
 letter-spacing: 0.02em;
 font-style: normal;
+margin-left: auto;
 }
 
 .adress:focus,
@@ -79,7 +80,7 @@ font-style: normal;
 font-family: 'Roboto', sans-serif;
 font-size: 16px;
 font-weight: 400;
-line-height: 1,5;
+line-height: 1.5;
 letter-spacing: 0.02em;
 }
 
@@ -103,7 +104,7 @@ line-height: 1.07;
 letter-spacing: 0.02em;
 max-width: 496px;
 margin: 0 auto;
-padding-bottom: 40px;
+margin-bottom: 40px;
 }
 
 .modal-btn{
@@ -178,6 +179,7 @@ line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 margin-bottom: 72px;
+margin-top: 0;
 }
 
 .name-work-team{
@@ -190,6 +192,7 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 text-align: center;
 margin-bottom: 8px;
+margin-top: 0;
 }
 
 .working-team{
@@ -212,6 +215,7 @@ font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.02em;
 text-align: center;
+margin: 0;
 }
 
 .footer{
@@ -236,6 +240,8 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.5; 
 letter-spacing: 0.02em;
+margin: 0;
+width: 264px;
 }
 
 .visually-hidden {
@@ -280,8 +286,7 @@ padding: 0 15px;
 
 .page-nav{
  display: flex;
- align-items: center; 
- padding-left: 156px;  
+ align-items: center;   
 } 
 
 .menu{
@@ -337,8 +342,7 @@ width: calc((100% - 72px) / 4);
 }
 
  .logo-nav-footer{
-    display: inline-block;
-    margin-bottom: 16px; 
+    display: inline-block; 
 }
 .working-team{
     display: block;
@@ -355,9 +359,6 @@ img{
 
 .name-profesional-div{
     padding: 32px 0;
-    width: calc((100% - 72px) / 4);
-    margin: 0 auto;
-    display: inline;
 }
 
 
