@@ -33,6 +33,12 @@ button {
         text-transform: uppercase;
         margin-right: 76px
  }
+
+ .link .logo{
+    display: inline-block;
+    margin-bottom: 16px;
+    margin-right: 76px;
+}
     
 .logo-nav{
         color: #2E2F42;
