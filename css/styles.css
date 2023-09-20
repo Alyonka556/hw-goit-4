@@ -2,6 +2,7 @@
 font-family: 'Roboto', sans-serif;
 color: #434455;
 background-color:#FFFFFF;
+box-sizing: border-box;
 }
 
 :root{
@@ -16,6 +17,10 @@ background-color:#FFFFFF;
 
 .link{
     text-decoration: none;
+}
+
+button {
+    cursor: pointer;
 }
 
 .logo{
@@ -257,15 +262,9 @@ width: 264px;
     overflow: hidden;
 }
 
-.h1, .h2, .h3, .h4, .p {
+h1, h2, h3, h4, h5, h6, p {
 margin-top: 0;
 margin-bottom: 0;
-}
-
-.ul,.ol {
-margin-top: 0;
-margin-bottom: 0;
-padding-left: 0;
 }
 
 .page-header{
@@ -275,7 +274,7 @@ padding: 21px;
 }
 
 .div{
-display: flex;   
+    display: flex;
 }
 
 .container{
@@ -336,7 +335,7 @@ width: calc((100% - 72px) / 4);
     padding: 32px 0;
 }
 
- .logo-nav-footer{
+.logo-nav-footer{
     display: inline-block; 
 }
 .working-team{
