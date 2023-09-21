@@ -147,8 +147,18 @@ margin-bottom: 8px;
 margin-top: 0;
 }
 
-.icon{
-    background: var(--CLOUD, #F4F4FD);
+.company-wrapper{
+    background: var(--CLOUD, #F4F4FD); 
+margin-top: 0;
+border-radius: 4px;
+width: 264px;
+height: 112px;
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-icon{ 
 }
 
 .inform-text{
