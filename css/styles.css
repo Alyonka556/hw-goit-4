@@ -7,6 +7,7 @@ box-sizing: border-box;
 
 :root{
     --brand-color:#434455;
+    --CLOUD: #F4F4FD;
 }
 
 .list{
@@ -144,6 +145,10 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 margin-bottom: 8px; 
 margin-top: 0;
+}
+
+.icon{
+    background: var(--CLOUD, #F4F4FD);
 }
 
 .inform-text{
