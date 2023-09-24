@@ -1,12 +1,19 @@
 
 .body{ 
     font-family: 'Roboto', sans-serif;
-    color:#434455;
+    color: var(--brand-color);
     background-color:#FFFFFF;
 }
     
 :root{
     --brand-color:#434455;
+    --cloud: #F4F4FD;
+    --navy-blue: #2E2F42;
+    --light-slate: #8E8F99;
+    --ocean: #404BBF;
+    --white: #FFF;
+    --color-iris: #4d5ae5;
+    --color-green: #31d0aa;
 }
     
 .list{
@@ -22,9 +29,36 @@
 button {
     cursor: pointer;
 }
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.page-header{
+    border-bottom: 1px solid #e7e9fc;
+    display: flex;
+    padding: 21px;
+}
+
+.div{
+    display: flex;
+}
+
+.container{
+width: 1158px;
+margin: 0 auto;
+padding: 0 15px;
+}
     
 .logo{
-        color: #4D5AE5;
+        color: var(--color-iris);
         font-family: 'Raleway', sans-serif;
         font-size: 18px;
         font-weight: 800;
@@ -32,16 +66,26 @@ button {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin-right: 76px
- }
+}
 
- .link .logo{
+.link .logo{
     display: inline-block;
     margin-bottom: 16px;
     margin-right: 76px;
 }
+
+.page-nav{
+    display: flex;
+    align-items: center;
+}
+    
+.menu{
+        display: flex;
+        gap: 40px;
+}
     
 .logo-nav{
-        color: #2E2F42;
+        color: var(--navy-blue);
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 800;
@@ -51,25 +95,38 @@ button {
 }
     
 .menu-link{
-        color: #2E2F42;
+        color: var(--navy-blue);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-    
-.menu-link:hover{
-        color: #404bbf;  
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--ocean);
 }
-    
-.menu-link:focus{
-        color: #404bbf;
- }
-    
+
+.menu-link:hover::after,
+.menu-link:focus::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--ocean);
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+  }
+
+  /* adress */
 .adress{
-        color:#434455;
+        color:var(--brand-color);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -79,9 +136,14 @@ button {
     margin-left: auto;
     
 }
+
+.list-adress{
+    display: flex;
+    gap: 40px;
+}
    
 .adress-menu{
-        color:#434455;
+        color:var(--brand-color);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -91,20 +153,31 @@ button {
     
 .adress-menu:focus,
 .adress-menu:hover {
-        color:#404bbf;
+color:#404bbf;
 }
-    
-    
-    
+
+
+/* section modal */
+.section-modal{
+    padding: 96px 0 120px 0;
+}
+
+.btn-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+       
 .btn-modal{
-        color:#4d5ae5;
+        color: var(--color-iris);
         text-align: center;
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
         font-weight: 500;
         line-height: 1.5; 
         letter-spacing: 0.04em;
-        background-color:#F4F4FD;
+        background-color:var(--cloud);
         padding: 12px 24px;
         border-radius: 4px;
         border: 1px solid #e7e9fc;
@@ -129,122 +202,6 @@ button {
 
 .list-work{
     display: flex;
-        flex-wrap: wrap;
-        column-gap: 24px;
-        row-gap: 48px;
-        padding-left: 0;
-        margin: 0 auto;
-}
-
-.title-name{
-    margin-top: 0;
-color:#2E2F42;
-font-family: 'Roboto', sans-serif;
-font-size: 20px;
-font-weight: 500;
-line-height: 1.2; 
-letter-spacing: 0.02em;
-margin-bottom: 8px;
-}
-
-.text{
-    margin: 0;
-        color:#434455;
-font-family: 'Roboto', sans-serif;
-font-size: 16px;
-font-weight: 400;
-line-height: 1.5;
-letter-spacing: 0.02em;
-}
-
-.footer{
-        background-color:#2e2f42;
-        padding: 100px 0;
-}
-    
-.logo-nav-footer{
-        color:#F4F4FD;
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-    
-.business-item{
-        color:#F4F4FD;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5; 
-    letter-spacing: 0.02em;
-    margin: 0;
-    width: 264px;
-}
-
-.visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-margin-top: 0;
-margin-bottom: 0;
-}
-
-.page-header{
-border-bottom: 1px solid #e7e9fc;
-display: flex;
-padding: 21px;
-}
-
-.div{
-    display: flex;
-}
-
-.container{
-width: 1158px;
-margin: 0 auto;
-padding: 0 15px;
-}
-
-.page-nav{
-display: flex;
-align-items: center;
-}
-
-.menu{
-    display: flex;
-    gap: 40px;
-}
-
-.list-adress{
-    display: flex;
-    gap: 40px;
-}
-
-.section-modal{
-    padding: 96px 0 120px 0;
-}
-
-.btn-list{
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    margin-bottom: 72px;
-}
-
-.list-work{
-    display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
@@ -253,6 +210,28 @@ align-items: center;
 .list-information{
     width: calc((100% - 48px) / 3);
     border-radius: 4px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.list-work{
+    display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;
+        padding-left: 0;
+        margin: 0 auto;
 }
 
 .list-information:hover{
@@ -265,22 +244,114 @@ align-items: center;
 
 .img-progect{}
 
-img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
- 
+.content-
 .h-p{
     padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-  
+
+.title-name{
+    margin-top: 0;
+color:var(--navy-blue);
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+font-weight: 500;
+line-height: 1.2; 
+letter-spacing: 0.02em;
+margin-bottom: 8px;
+}
+
+.text{
+    margin: 0;
+        color:var(--brand-color);
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.02em;
+}
+
+/* footer */
+.footer{
+        background-color:var(--navy-blue);
+        padding: 100px 0;
+}
+
+.footer-container{
+    display: flex;
+    align-items: baseline;
+}
+
 .footer-logo{
     display: inline-block;
     margin-bottom: 16px;
-
 }
+    
+.logo-nav-footer{
+        color:var(--cloud);
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+    
+.business-item{
+        color:var(--cloud);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
+    margin: 0;
+    width: 264px;
+}
+
+.footer-social {
+    margin-left: 120px;
+}
+
+.social-text {
+color: var(--white, #FFF);
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5; 
+letter-spacing: 0.02em;
+margin-bottom: 16px;
+}
+
+.social-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+}
+
+.social-icon {
+width: 40px;
+height: 40px;
+}
+.social-link {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    color: var(--cloud);
+    background-color: var(--color-iris);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-icon {
+fill: var(--cloud);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--color-green);
+}
+
     
