@@ -14,6 +14,7 @@ box-sizing: border-box;
     --white: #FFF;
     --color-iris: #4d5ae5;
     --color-green: #31d0aa;
+    --dairy: #FCFCFC;
 }
 
 .list{
@@ -568,25 +569,79 @@ margin: 0 auto;
 }
 
 .backdrop{
-    /* display: flex;
+    display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
 
     position: fixed;
     top: 0;
     left: 0;
+    z-index: var(--cloud);
+
     width: 100%;
     height: 100%;
-    background-image: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+
+    background-color: var(--navy-blue), rgba(46, 47, 66, 0.40);
+    backdrop-filter: blur(2px);
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
+.backdrop.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition-delay: 200ms;
+}
+
 .modal{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 
+    transform: translateX(-50%) translateY(-50%);
     width: 408px;
-    height: 584;
-    background-color: var(--DAIRY, #FCFCFC);;
+    min-height: 584px;
+
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    background-color: var(--dairy);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close{
+    padding: 0;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--dairy);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  background-color: var(--ocean);
+  border: none;
+  fill: var(--white);
+}
+
+.modal-btn{
+    fill: var(--navy-blue);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover .modal-btn,
+.modal-btn:focus .modal-btn {
+  fill: var(--white);
 }
