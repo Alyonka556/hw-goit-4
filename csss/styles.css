@@ -381,9 +381,8 @@ letter-spacing: 0.02em;
 }
 
 .footer-logo{
-    display: inline-block;
-    margin-bottom: 16px;
-    margin-right: 120px
+    width: 264px;
+  margin-right: 120px;
 }
     
 .logo-nav-footer{
